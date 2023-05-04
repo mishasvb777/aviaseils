@@ -1,0 +1,40 @@
+@import '../../variables/variables.scss';
+.nav{
+  width: 100%; 
+}
+
+.nav__button {
+  background: $background-color-items;
+  border: 1px solid #dfe5ec;
+  padding: 15px;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1.0px;
+  text-transform: uppercase;
+  color: $dark-color;
+  width: 33.33%;
+}
+.nav__button:hover{
+  cursor: pointer;
+}
+
+.nav__button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: 0;
+}
+
+.nav__button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 0;
+}
+
+.nav__button-active {
+  background-color: $blue-color;
+  color: $white-color;
+}

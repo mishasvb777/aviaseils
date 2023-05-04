@@ -1,17 +1,18 @@
 import React from 'react'
-import styles from './Card.module.css'
+import styles from './Card.module.scss'
 import DepInform from './DepInform/DepInform'
+import avia_logo from '../../assets/avia-logo.svg'
 
 const Card = () => {
   return (
     <div className={styles.card}>
-      <div className="card__header">
-        <span className="card__header__price">13 400</span>
-        <img className="card__header__image" src="./assets/avia-logo" />
+      <div className={styles.card__header}>
+        <span className={styles.card__header__price}>13 400</span>
+        <img className="card__header__image" src={avia_logo} alt="avia company logotip" />
       </div>
-      <div className="card__body">
+      <div className={styles.card__body}>
         <DepInform />
-        <DepInform />        
+        <DepInform />
       </div>
     </div>
   )

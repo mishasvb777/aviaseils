@@ -1,0 +1,38 @@
+@import '../../../variables/variables.scss';
+
+.card__body__inform {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.card__body__inform:last-child {
+  padding-bottom: 20px;
+}
+
+.card_body__inform__section {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  margin-bottom: 10px;
+}
+
+.card_body__inform__section__title {
+  text-transform: uppercase;
+  color: $grey-color;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+
+.card_body__inform__section__value {
+  text-transform: uppercase;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: $dark-color;
+}
