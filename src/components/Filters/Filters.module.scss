@@ -1,0 +1,33 @@
+@import '../../variables/variables.scss';
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  width: 232px;
+  height: 252px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-right: 20px;
+}
+.filters__title {
+  font-family: $font-family;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+}
+
+.filters__item {
+  height: 40px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;  
+  display: flex;
+  align-items: center;
+  color: #4a4a4a;
+}
