@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const state = {
-  active: [true, false, false]
+  active: [true, false, false],
 }
 
 const buttonSlice = createSlice({
@@ -9,14 +9,13 @@ const buttonSlice = createSlice({
   initialState: state,
   reducers: {
     toggleActiveStatus(state, actions) {
-      const id = actions.payload      
-      state.active = state.active.map(el => el = false)
+      const id = actions.payload
+      state.active = state.active.map((el) => (el = false))
       state.active.splice(id, 1, true)
-    },    
-  }
+    },
+  },
 })
 
 export const buttonSliceActions = buttonSlice.actions
 
 export default buttonSlice
-

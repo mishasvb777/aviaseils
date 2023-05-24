@@ -1,7 +1,5 @@
 @import '../../variables/variables.scss';
 
-
-
 .filters {
   display: flex;
   flex-direction: column;
@@ -46,17 +44,17 @@
   opacity: 0;
 }
 
-.filters__item__checkbox+label{
+.filters__item__checkbox + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.filters__item__checkbox+label::before{
+.filters__item__checkbox + label::before {
   content: '';
   width: 17px;
   height: 17px;
-  border: 1px solid #9ABBCE;
+  border: 1px solid #9abbce;
   border-radius: 2px;
   margin-right: 10px;
   background-repeat: no-repeat;
@@ -64,7 +62,7 @@
   background-size: 50% 50%;
 }
 
-.filters__item__checkbox:checked+label::before{
-  border-color: $blue-color;  
-  background-image: url('../../assets/checked.svg')
+.filters__item__checkbox:checked + label::before {
+  border-color: $blue-color;
+  background-image: url('../../assets/checked.svg');
 }

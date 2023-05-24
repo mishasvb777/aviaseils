@@ -19,12 +19,14 @@ const FiltersItem = (props) => {
 
   const toggleCheckedStatus = () => {
     dispatch(filtersActions.toggleCheckedStatus(id))
-    dispatch(ticketSliseActions.filterTickets({
-      id: id,
-      checkdeStatus: !checkedOne
-    }))
+    dispatch(
+      ticketSliseActions.filterTickets({
+        id: id,
+        checkdeStatus: !checkedOne,
+      })
+    )
   }
-  
+
   return (
     <div className={styles.filters__item}>
       <input

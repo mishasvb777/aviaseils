@@ -7,13 +7,20 @@ import { getTickets, ticketSliseActions, getId } from '../../store/ticketsSlice'
 
 const Filters = () => {
   const dispatch = useDispatch()
-  const TICKET = useSelector(state => state.ticket.TICKET)
-
+  const TICKET = useSelector((state) => state.ticket.TICKET)
 
   const toggleNonStopFilters = () => {
-    dispatch(ticketSliseActions.nonStopFilters(TICKET.filter(el => el.segments[0].stops.length !== 0 && el.segments[1].stops.length !== 0)))
+    dispatch(
+      ticketSliseActions.nonStopFilters(
+        TICKET.filter(
+          (el) =>
+            el.segments[0].stops.length !== 0 &&
+            el.segments[1].stops.length !== 0
+        )
+      )
+    )
   }
-  
+
   return (
     <div className={styles.filters}>
       <span className={styles.filters__title}>Количество пересадок</span>
