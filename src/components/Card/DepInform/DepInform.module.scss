@@ -29,10 +29,14 @@
 }
 
 .card_body__inform__section__value {
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-family: $font-family;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   color: $dark-color;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
