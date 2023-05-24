@@ -184,7 +184,7 @@ const ticketSlise = createSlice({
     },
     [getTickets.fulfilled]: (state, action) => {
       if (action.payload.stop) {
-        ;(state.status = 'resolve'), (state.statusSearch = true)
+        (state.status = 'resolve'), (state.statusSearch = true)
       } else if (
         action.payload.tickets !== null ||
         action.payload.tickets !== undefined
